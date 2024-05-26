@@ -1,0 +1,12 @@
+_format_version: "2.1"
+_transform: true
+
+services:
+  - name: test_service
+    url: http://app:8002
+    path: /
+    routes:
+      - name: test-service-routes
+        paths:
+          - /xyz
+        strip_path: false
